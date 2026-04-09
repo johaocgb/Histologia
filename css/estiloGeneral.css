@@ -1,0 +1,79 @@
+/* =====================================================
+   ESTILOS GENERALES DEL SITIO
+   ===================================================== */
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin: 0;
+    background-image: url('images/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer{
+    background-color: black;
+    color: #999;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright{
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar{
+    background-color: whitesmoke;
+    margin-top: 0;
+    padding: 8px 16px;
+}
+
+.navbar-brand{
+    width: 180px;
+    height: auto;
+    margin: 0;
+}
+
+.nav-link{
+    color: #00447b;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   TITULOS GENERALES 
+   ===================================================== */
+
+.title{
+    color: #00447b;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   ANIMACION GLOBAL
+   ===================================================== */
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}

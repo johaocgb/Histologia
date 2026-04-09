@@ -1,0 +1,74 @@
+/* =====================================================
+   TITULOS HOME
+   ===================================================== */
+
+.container-tb h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.card-title{
+    text-align: center;
+    margin: 2%;
+    font-size: 36px;
+    text-shadow: 3px 3px rgb(189, 186, 186);
+}
+
+
+/* =====================================================
+   GALERIA HOME
+   ===================================================== */
+
+.gallery{
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-td{
+    padding: 1%;
+}
+
+.img-a{
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.text-a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #0d63aa;
+}
+
+.animal-btn{
+    margin-top: 3%;
+}
+
+
+/* =====================================================
+   PAGINADOR HOME
+   ===================================================== */
+
+.container-pag{
+    text-align: center;
+    margin: 5%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container img{
+    padding: 2px;
+    width: 500px;
+    height: 320px;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: grey;
+}

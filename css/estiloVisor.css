@@ -1,0 +1,189 @@
+/* ======================================================
+   CONTENEDOR DEL VISOR IMAGENES
+   OpenSeadragon + panel lateral integrado
+====================================================== */
+
+.image-container{
+  width:100%;
+  position:relative;
+}
+
+/* Visor principal */
+
+#viewer{
+  display:flex;
+  width:100%;
+  height:85vh;
+  background:black;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+}
+
+/* Área donde se renderiza la imagen */
+
+#viewer-main{
+  flex:1;
+  height:100%;
+}
+
+
+/* ======================================================
+   TOOLBAR DEL VISOR (controles flotantes)
+====================================================== */
+
+.visor-toolbar{
+  position:absolute;
+  bottom:15px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(6px);
+  padding:8px 20px;
+  border-radius:50px;
+  display:flex;
+  gap:25px;
+  z-index:9999;
+}
+
+.toolbar-left,
+.toolbar-center{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+/* Botones del visor */
+
+.btn-control{
+  background:transparent;
+  border:none;
+  color:white;
+  font-size:1.2rem;
+  cursor:pointer;
+  transition:transform 0.2s ease,color 0.2s ease;
+}
+
+.btn-control:hover{
+  color:#00c3ff;
+  transform:scale(1.2);
+}
+
+/* Botón salir oculto fuera de fullscreen */
+
+#btn-exit{
+  display:none;
+}
+
+
+/* ======================================================
+   MODO FULLSCREEN
+====================================================== */
+
+#viewer:fullscreen{
+  height:100vh;
+  border-radius:0;
+}
+
+#viewer:fullscreen .visor-toolbar{
+  bottom:25px;
+}
+
+#viewer:fullscreen #btn-exit{
+  display:inline-block;
+}
+
+
+/* ======================================================
+   MINI MAPA (Navigator de OpenSeadragon)
+====================================================== */
+
+.openseadragon-container .navigator{
+  width:140px !important;
+  height:140px !important;
+  border-radius:6px;
+}
+
+
+/* ======================================================
+   ETIQUETAS (overlays de texto en la imagen)
+====================================================== */
+
+.etiqueta-overlay{
+  position:absolute;
+  transform:translate(-50%, -50%);
+  pointer-events:none;
+}
+
+.etiqueta-texto{
+  display:inline-block;             
+  background:rgba(13, 253, 0, 0.2);
+  color:rgb(40, 37, 37);
+  font-size:12px;
+  font-weight:bold;                
+  padding:2px 6px;                 
+  border-radius:6px;                
+  white-space:nowrap;
+  line-height:1;                   
+}
+
+/* ======================================================
+   CUADRANTES (MEJORADO CON LABEL)
+====================================================== */
+
+/* Estado base (invisible limpio) */
+.cuadrante-overlay{
+  border:2px solid transparent;
+  background:transparent;
+  box-sizing:border-box;
+  position:relative;
+  transition:0.2s;
+}
+
+/* Hover (lo que ya tienes pero mejor) */
+.cuadrante-overlay.activo{
+  border:2px solid rgba(255,255,255,0.9);
+  background:rgba(0,0,0,0.2);
+}
+
+/* ============================
+   TEXTO DEL CUADRANTE (10X)
+============================ */
+
+.cuadrante-label{
+  position:absolute;
+  top:6px;
+  left:6px;
+
+  background:rgba(0,0,0,0.75);
+  color:white;
+
+  font-size:12px;
+  font-weight:600;
+
+  padding:3px 6px;
+  border-radius:5px;
+
+  opacity:0;
+  transition:0.2s;
+
+  pointer-events:none;
+}
+
+/* Mostrar texto solo en hover */
+.cuadrante-overlay.activo .cuadrante-label{
+  opacity:1;
+}
+
+
+/* ======================================================
+   RESPONSIVE VISOR
+====================================================== */
+
+@media (max-width:992px){
+
+  #viewer{
+    height:400px;
+  }
+
+}
