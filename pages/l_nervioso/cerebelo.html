@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histología - Arteria</title>
+    <title>Histología - Glandula Salival Mucosa</title>
 <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
@@ -31,7 +31,7 @@
 <div class="container-fluid container-pag">
 
 <div class="text-center my-4">
-<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Digestivo - Estomago </h2>
+<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Nervioso - Cerebelo</h2>
 </div>
 
 <div class="row">
@@ -49,12 +49,12 @@
 
 <div id="panel-descripcion">
 
-<h3 class="title">Estomago</h3>
+<h3 class="title">Cerebelo</h3>
 
 <div class="text-content-area">
 
 <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="lengua4x">
+<div class="pagina active" data-level="4" data-id="pulmon">
     <p><strong>AUMENTO 4X:</strong></p>
 <p>
 El tejido de la imagen corresponde a una lengua. Se logra evidenciar eritrocitos 
@@ -68,7 +68,7 @@ en la luz y la pared del vaso conformado por:
 </div>
 
 <!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="lengua10x">
+<div class="pagina" data-level="10" data-id="pulmon10X">
 <p><strong>AUMENTO 10X:</strong></p>
 <p>
 <strong>Túnica íntima:</strong>
@@ -83,17 +83,10 @@ Fibras de músculo liso.
 Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
 </p>
 </div>
-<!-- = PÁGINA 40X -->
-<div class="pagina" data-level="40" data-id="lengua40x">
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-<strong>Túnica íntima:</strong>
-(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
-<br>
-Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
-</p>
 
-<div class="pagina" data-level="40" data-id="lengua40x3">
+<!-- = PÁGINA 40X -->
+
+<div class="pagina" data-level="40" data-id="pulmon40X">
 <p><strong>AUMENTO 40X:</strong></p>
 <p>
 <strong>Túnica media:</strong>
@@ -102,8 +95,18 @@ Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
 Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
 </p>
 </div>
+
+<div class="pagina" data-level="40" data-id="pulmon40X2">
+<p><strong>AUMENTO 40X:</strong></p>
+<p>
+<strong>Túnica íntima:</strong>
+(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
+<br>
+Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
+</p>
 </div>
 </div>
+
 <!-- ==============================
      TOOLBAR (CONTROLES DEL VISOR)
 ============================== -->
@@ -174,31 +177,39 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     <!-- data-inicial="true" define la imagen que se carga al inicio -->
     <button class="thumb-btn" 
         data-level="4" 
-        data-id="lengua" 
-        data-src="img/lengua/E14-040_4X.jpg" 
+        data-id="cerebelo" 
+        data-src="img/cerebelo/foco1/4X.jpg" 
         data-inicial="true">
     </button>
 
     <!-- IMAGEN 10X -->
     <button class="thumb-btn" 
         data-level="10" 
-        data-id="lengua10x" 
-        data-src="img/lengua/E14-040_10X.jpg">
+        data-id="10X" 
+        data-src="img/cerebelo/foco1/10X.jpg">
     </button>
 
+    
     <!-- IMÁGENES 40X -->
-    <button class="thumb-btn" 
+     <button class="thumb-btn" 
         data-level="40" 
-        data-id="lengua40x" 
-        data-src="img/lengua/E14-040_40X.jpg">
+        data-id="40X" 
+        data-src="img/cerebelo/foco1/40X.jpg">
     </button>
 
     <button class="thumb-btn" 
         data-level="40" 
-        data-id="lengua40x3" 
-        data-src="img/lengua/E14-040_40X3.jpg">
+        data-id="40X2" 
+        data-src="img/cerebelo/foco1/40X2.jpg">
     </button>
 
+     <button class="thumb-btn" 
+        data-level="40" 
+        data-id="40X3" 
+        data-src="img/cerebelo/foco1/40X3.jpg">
+    </button>
+
+   
 
 </div>
 <!-- ==============================
@@ -214,6 +225,297 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     -->
 <div id="config-etiquetas" style="display:none;">
 
+<div class="etiqueta-link"
+data-level="4"
+data-id="cerebelo"
+data-x="0.7302"
+data-y="0.5067"
+data-label="M">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="cerebelo"
+data-x="0.2826"
+data-y="0.4177"
+data-label="SB">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="cerebelo"
+data-x="0.2934"
+data-y="0.1759"
+data-label="SG">
+</div>
+<div class="etiqueta-link"
+data-level="4"
+data-id="cerebelo"
+data-x="0.0768"
+data-y="0.1873"
+data-label="F">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="cerebelo"
+data-x="0.2694"
+data-y="0.073"
+data-label="M">
+</div>
+
+<div class="etiqueta-link"
+data-level="4"
+data-id="cerebelo"
+data-x="0.8004"
+data-y="0.1147"
+data-label="F">
+</div>
+
+<!-- ETIQUETAS en 10X -->
+<div class="etiqueta-link"
+data-level="10"
+data-id="10X"
+data-x="0.1469"
+data-y="0.1733"
+data-label="PM">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="10X"
+data-x="0.407"
+data-y="0.106"
+data-label="CM">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="10X"
+data-x="0.5514"
+data-y="0.1357"
+data-label="CPI">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="10X"
+data-x="0.6978"
+data-y="0.3809"
+data-label="SB">
+</div>
+
+<div class="etiqueta-link"
+data-level="10"
+data-id="10X"
+data-x="0.5222"
+data-y="0.2755"
+data-label="CG">
+</div>
+
+<!-- ETIQUETAS en 40X -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.0287"
+data-y="0.0312"
+data-label="CP">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.1661"
+data-y="0.1988"
+data-label="VS">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.06"
+data-y="0.19"
+data-label="GG">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.0701"
+data-y="0.3541"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.2826"
+data-y="0.3752"
+data-label="GR">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.5339"
+data-y="0.2035"
+data-label="GR">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.7252"
+data-y="0.1795"
+data-label="GR">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.7896"
+data-y="0.439"
+data-label="*">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X3"
+data-x="0.1456"
+data-y="0.5091"
+data-label="*">
+</div>
+
+<!-- ETIQUETAS en 40X2 -->
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.0591"
+data-y="0.111"
+data-label="PM">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.0743"
+data-y="0.2108"
+data-label="VS">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.1639"
+data-y="0.3472"
+data-label="VS">
+</div>
+
+<!-- 
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.4137"
+data-y="0.3208"
+data-label="">
+</div>-->
+
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.3727"
+data-y="0.2514"
+data-label="GLI">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.3285"
+data-y="0.3549"
+data-label="GLI">
+</div>
+
+<div class="etiqueta-link"
+data-level="40"
+data-id="40X2"
+data-x="0.9276"
+data-y="0.4477"
+data-label="CP">
+</div>
+
+
+<!-- ==============================
+    CUADRANTES (ENLACES ENTRE NIVELES)
+============================== -->
+<!-- 
+Bloque que define áreas clicables.
+Permiten navegar entre imágenes (niveles 4, 10, 40).
+-->
+<div id="config-cuadrantes" style="display:none;">
+      <!-- EJEMPLO: de 4X → 10X -->
+    <!-- 
+    data-parent       → nivel actual= (4, 10 o 40)
+    data-parent-id    → imagen origen (data-id de los botones anteriores)
+    data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
+    data-target-level → nivel destino (4, 10 o 40)
+    data-x/y          → posición (inicio)
+    data-w/h          → tamaño (ancho/alto)
+    data-label        → texto mostrado en hover = 4X, 10X o 40X
+    --> 
+<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+
+<div data-parent="4"
+data-parent-id="cerebelo"
+data-target="10X"
+data-target-level="10"
+data-label="10X"
+data-x="0.3501"
+data-y="0.0013"
+data-w="0.4350"
+data-h="0.2235">
+</div>
+
+
+
+
+<!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
+
+<div data-parent="10"
+data-parent-id="10X"
+data-target="40X2"
+data-target-level="40"
+data-label="40X"
+data-x="0.1533"
+data-y="0.1142"
+data-w="0.2786"
+data-h="0.3130">
+</div>
+
+<div data-parent="10"
+data-parent-id="10X"
+data-target="40X"
+data-target-level="40"
+data-label="40X"
+data-x="0.3779"
+data-y="0.1622"
+data-w="0.2462"
+data-h="0.1301">
+</div>
+
+<div data-parent="10"
+data-parent-id="10X"
+data-target="40X3"
+data-target-level="40"
+data-label="40X"
+data-x="0.4554"
+data-y="0.1536"
+data-w="0.2103"
+data-h="0.1692">
+</div> 
 
     <!-- ==============================
      FOOTER DINÁMICO

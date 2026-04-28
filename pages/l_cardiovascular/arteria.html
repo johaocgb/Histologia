@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histología - Arteria</title>
+    <title>Histología - Glandula Salival Mucosa</title>
 <!-- ==============================
      LIBRERÍAS EXTERNAS
 ============================== -->
@@ -31,7 +31,7 @@
 <div class="container-fluid container-pag">
 
 <div class="text-center my-4">
-<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Digestivo - Estomago </h2>
+<h2 class="fw-bold text-primary">LAGOTHRIX - Sistema Cardiovascular - Arteria</h2>
 </div>
 
 <div class="row">
@@ -49,12 +49,12 @@
 
 <div id="panel-descripcion">
 
-<h3 class="title">Estomago</h3>
+<h3 class="title">Arteria</h3>
 
 <div class="text-content-area">
 
 <!-- = PÁGINA 4X (ACTIVA POR DEFECTO)-->
-<div class="pagina active" data-level="4" data-id="lengua4x">
+<div class="pagina active" data-level="4" data-id="4">
     <p><strong>AUMENTO 4X:</strong></p>
 <p>
 El tejido de la imagen corresponde a una lengua. Se logra evidenciar eritrocitos 
@@ -68,7 +68,7 @@ en la luz y la pared del vaso conformado por:
 </div>
 
 <!-- = PÁGINA 10X -->
-<div class="pagina" data-level="10" data-id="lengua10x">
+<div class="pagina" data-level="10" data-id="10x">
 <p><strong>AUMENTO 10X:</strong></p>
 <p>
 <strong>Túnica íntima:</strong>
@@ -83,17 +83,9 @@ Fibras de músculo liso.
 Tejido conectivo laxo, (VS) vasos vasorum, nervios y vasos linfáticos.
 </p>
 </div>
-<!-- = PÁGINA 40X -->
-<div class="pagina" data-level="40" data-id="lengua40x">
-<p><strong>AUMENTO 40X:</strong></p>
-<p>
-<strong>Túnica íntima:</strong>
-(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
-<br>
-Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
-</p>
 
-<div class="pagina" data-level="40" data-id="lengua40x3">
+
+<div class="pagina" data-level="40" data-id="40X">
 <p><strong>AUMENTO 40X:</strong></p>
 <p>
 <strong>Túnica media:</strong>
@@ -102,8 +94,20 @@ Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
 Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
 </p>
 </div>
+
+<!-- = PÁGINA 40X -->
+
+<div class="pagina" data-level="40" data-id="40X2">
+<p><strong>AUMENTO 40X:</strong></p>
+<p>
+<strong>Túnica íntima:</strong>
+(E) Endotelio (epitelio plano simple), sostenido por lámina basal con colágeno, proteoglicanos y glucoproteínas.
+<br>
+Capa subendotelial: (TC) tejido conectivo laxo con células musculares lisas.
+</p>
 </div>
 </div>
+
 <!-- ==============================
      TOOLBAR (CONTROLES DEL VISOR)
 ============================== -->
@@ -174,30 +178,36 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     <!-- data-inicial="true" define la imagen que se carga al inicio -->
     <button class="thumb-btn" 
         data-level="4" 
-        data-id="lengua" 
-        data-src="img/lengua/E14-040_4X.jpg" 
+        data-id="4" 
+        data-src="img/arteria/foco1/4X.jpg" 
         data-inicial="true">
     </button>
 
     <!-- IMAGEN 10X -->
     <button class="thumb-btn" 
         data-level="10" 
-        data-id="lengua10x" 
-        data-src="img/lengua/E14-040_10X.jpg">
+        data-id="10X" 
+        data-src="img/arteria/foco1/10X.jpg">
     </button>
 
     <!-- IMÁGENES 40X -->
     <button class="thumb-btn" 
-        data-level="40" 
-        data-id="lengua40x" 
-        data-src="img/lengua/E14-040_40X.jpg">
+        data-level="40"
+        data-id="40X" 
+        data-src="img/arteria/foco1/40X.jpg">
+    </button>
+    <button class="thumb-btn" 
+        data-level="40"
+        data-id="40X2" 
+        data-src="img/arteria/foco1/40X2.jpg">
+    </button>
+    <button class="thumb-btn" 
+        data-level="40"
+        data-id="40X3" 
+        data-src="img/arteria/foco1/40X3.jpg">
     </button>
 
-    <button class="thumb-btn" 
-        data-level="40" 
-        data-id="lengua40x3" 
-        data-src="img/lengua/E14-040_40X3.jpg">
-    </button>
+  
 
 
 </div>
@@ -213,6 +223,36 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     data-label → texto mostrado EN LA ETIQUETA
     -->
 <div id="config-etiquetas" style="display:none;">
+
+<!-- ETIQUETAS en 10X -->
+
+
+<!-- ETIQUETAS en 40X -->
+
+
+<!-- ==============================
+    CUADRANTES (ENLACES ENTRE NIVELES)
+============================== -->
+<!-- 
+Bloque que define áreas clicables.
+Permiten navegar entre imágenes (niveles 4, 10, 40).
+-->
+<div id="config-cuadrantes" style="display:none;">
+      <!-- EJEMPLO: de 4X → 10X -->
+    <!-- 
+    data-parent       → nivel actual= (4, 10 o 40)
+    data-parent-id    → imagen origen (data-id de los botones anteriores)
+    data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
+    data-target-level → nivel destino (4, 10 o 40)
+    data-x/y          → posición (inicio)
+    data-w/h          → tamaño (ancho/alto)
+    data-label        → texto mostrado en hover = 4X, 10X o 40X
+    --> 
+<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+
+
+<!-- CUADRANTES PARA LLEVAR A 40X DESDE 10X -->
+
 
 
     <!-- ==============================
