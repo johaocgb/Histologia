@@ -174,29 +174,29 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
     <!-- data-inicial="true" define la imagen que se carga al inicio -->
     <button class="thumb-btn" 
         data-level="4" 
-        data-id="lengua" 
-        data-src="img/lengua/E14-040_4X.jpg" 
+        data-id="estomago" 
+        data-src="img/estomago/4X.jpg" 
         data-inicial="true">
     </button>
 
     <!-- IMAGEN 10X -->
     <button class="thumb-btn" 
         data-level="10" 
-        data-id="lengua10x" 
-        data-src="img/lengua/E14-040_10X.jpg">
+        data-id="estomago10X" 
+        data-src="img/estomago/10X.jpg">
     </button>
 
     <!-- IMÁGENES 40X -->
     <button class="thumb-btn" 
         data-level="40" 
-        data-id="lengua40x" 
-        data-src="img/lengua/E14-040_40X.jpg">
+        data-id="estomago40X" 
+        data-src="img/estomago/40X.jpg">
     </button>
 
     <button class="thumb-btn" 
         data-level="40" 
-        data-id="lengua40x3" 
-        data-src="img/lengua/E14-040_40X3.jpg">
+        data-id="estomago40X2" 
+        data-src="img/estomago/40X2.jpg">
     </button>
 
 
@@ -215,6 +215,60 @@ Presencia de fibras reticulares, fibras de colágeno y fibras elásticas.
 <div id="config-etiquetas" style="display:none;">
 
 
+
+    <!-- ==============================
+    CUADRANTES (ENLACES ENTRE NIVELES)
+============================== -->
+<!-- 
+Bloque que define áreas clicables.
+Permiten navegar entre imágenes (niveles 4, 10, 40).
+-->
+<div id="config-cuadrantes" style="display:none;">
+      <!-- EJEMPLO: de 4X → 10X -->
+    <!-- 
+    data-parent       → nivel actual= (4, 10 o 40)
+    data-parent-id    → imagen origen (data-id de los botones anteriores)
+    data-target       → id de destino ADONDE QUIERES IR (data-id de los botones anteriores)
+    data-target-level → nivel destino (4, 10 o 40)
+    data-x/y          → posición (inicio)
+    data-w/h          → tamaño (ancho/alto)
+    data-label        → texto mostrado en hover = 4X, 10X o 40X
+    --> 
+<!-- CUADRANTE PARA LLEVAR A 10X DESDE 4X -->
+
+
+<div data-parent="4"
+data-parent-id="estomago"
+data-target="estomago10X"
+data-target-level="10"
+data-label="10X"
+data-x="0.4267"
+data-y="0.0365"
+data-w="0.4482"
+data-h="0.2702">
+</div>
+
+<div data-parent="10"
+data-parent-id="estomago10X"
+data-target="estomago40X"
+data-target-level="40"
+data-label="40X"
+data-x="0.4724"
+data-y="-0.0005"
+data-w="0.5019"
+data-h="0.2052">
+</div>
+
+<div data-parent="40"
+data-parent-id="estomago40X"
+data-target="estomago40X2"
+data-target-level="40"
+data-label="40X2"
+data-x="0.066"
+data-y="0.0202"
+data-w="0.6085"
+data-h="0.3914">
+</div>
     <!-- ==============================
      FOOTER DINÁMICO
 ============================== -->
